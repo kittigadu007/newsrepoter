@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+@font-face {
+  font-family: 'Aller';
+  src: url('../fonts/Aller.eot?#iefix') format('embedded-opentype'),  url('../fonts/Aller.woff') format('woff'), url('../fonts/Aller.ttf')  format('truetype'), url('../fonts/Aller.svg#Aller') format('svg');
+  font-weight: normal;
+  font-style: normal;
+ 
+}
+ 
+@font-face {
+  font-family: 'Aller-Bold';
+  src: url('../fonts/Aller-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Aller-Bold.woff') format('woff'), url('../fonts/Aller-Bold.ttf')  format('truetype'), url('../fonts/Aller-Bold.svg#Aller-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+   
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.ttf')  format('truetype'), url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+body{ margin:0px; padding:0px;}
+.container { width:1170px; margin:0px auto;}
+.top{ overflow:hidden; background:#FFFFFF;}
+.top .header{overflow:hidden;}
+.header .header-left{overflow:hidden; width:612px;    float: left;}
+.header-left img{     padding: 14px 23px 10px 3px;}
+.header .header-middle{overflow:hidden; width:340px; float:left; }
+.header-middle p{ font-size:14px; color:#007541;font-family: 'Aller-Bold';     padding: 17px 92px 6px 24px; margin:0px;}
+.header-middle h4{ font-size:14px; color:#007541;font-family: 'Aller-Bold'; padding:0px; margin:0px;}
+.header-middle h5{ font-size:14px; color:#007541;font-family: 'Aller-Bold';    padding-bottom: 25px; margin:0px; padding-top:11px; padding-left:24px;}
+.header .header-right{ float:right; overflow:hidden; width:218px;}
+.header-right ul{ margin:0px;    margin-top: 29px; overflow:hidden; padding:0px;}
+.header-right ul li{  list-style-type:none;}
+.header-right ul li a{    padding-left: 3px; text-decoration:none; float:left;font-family: 'Aller-Bold'; font-size:19px; color:#000000;}
+.header-right h2{    padding-left: 77px;font-family: 'Roboto-Bold'; font-size:27px; color:#ef1d1d; margin:0px; }
+.top .header-menus{ background:#296db0; overflow:hidden;}
+.header-menus .menus{ overflow:hidden; clear:both;}
+.menus ul{ margin:0px; overflow:hidden;padding:0px;}
+.menus ul li{ list-style-type:none;  line-height:50px; }
+.menus ul li .padding{padding-left:0px;}
+.menus ul li .margin{ padding-right:0px;}
+.menus ul li a{ text-decoration:none; float:left; font-size:14px; color:#ffffff;font-family: 'Aller-Bold';     padding-left: 21px;    padding-right: 21px;}
+.menus ul li a:hover{ color:#ffe082;text-decoration:underline;  }
+.slider {  overflow:hidden; margin-top:20px; margin-bottom:20px;}
+.slider .slider-left {background:#356650; width:270px; overflow:hidden; float:left;}
+.slider-left ul{ margin:0px; padding:0px;}
+.slider-left ul li{ list-style-type:none; line-height:38px; border-top:3px solid #2f5b47;}
+.slider-left ul li:first-child{ border-top:none;}
+.slider-left ul li a{ text-decoration:none; font-size:14px;color:#ffffff;font-family: 'Aller-Bold'; display:block; }
+.slider-left ul li:hover{color:#000066; }
+.slider-left ul li:saventh-child span{padding: 15px 0px 10px 0px;}
+.slider-left ul li a img{ padding:0px 18px 0px 7px; }
+.slider-left ul li a:hover{color:#000066; }
+.slider-left span { float:right; padding: 15px 3px 10px 10px;}
+.slider-left .right{ float:right; padding-top:13px;}
+.slider-right{float:right; overflow:hidden;  margin-left:20px;}
+.slider-bottom { overflow:hidden; border:2px solid #e6e6e6;}
+.slider-bottom img{ padding:0px 10px 0px 20px;}
+.slider-bottom h2{float:left; font-family: 'Aller-Bold'; color:#ef1d1d; font-size:16px; padding-left:10px; line-height:46px; margin:0px; text-align:center; width:178px; border-right:2px solid #e6e6e6;}
+.slider-bottom h3{ margin:14px 0px 14px 220px; font-size:15px; color:#144c84; font-family: 'Aller'; }
+.slider-bottom h3 span{ color:#e6e6e6;}
+.content{ overflow:hidden; margin-top:18px;}
+.content .content-left {  width:320px; overflow: hidden; float: left;}
+.content-left .content-navbar {background:#e5fbd9; }
+.content-left .content-left-hdg{overflow:hidden; }
+.content-left-hdg h2{ font-size:18px; color:#383017;font-family: 'Aller-Bold';margin: 0px; padding-top: 12px; }
+.content-left-hdg img{ float:left; padding-right:19px;}
+.content-left .content-left-smenus{ overflow:hidden;margin-top:20px; margin-left: 7px;}
+.content-left-smenus p{ font-size:15px; color:#000000;font-family: 'Aller';    margin: 0px;
+padding-left: 51px;     padding-right: 18px;}
+.content-left-smenu{overflow:hidden;padding-bottom: 18px;margin-top: 17px; margin-left: 7px;}
+.content-left-smenu p{ font-size:15px; color:#000000;font-family: 'Aller';    margin: 0px;
+padding-left: 51px;     padding-right: 18px;}
+.content-left-smenu img{padding: 0px 0px 0px 10px; float:left;}
+.content-left-smenus img{padding: 0px 0px 0px 10px; float:left;}
+.content-left .content-left-galary{ margin-top:20px; background:#e5eaf0; overflow:hidden;}
+.content-glry img { float:left;padding-right:19px;}
+.content-glry h2{ padding-top: 12px;margin:0px;font-family: 'Aller-Bold'; font-size:#000000; font-size:18px;}
+.content-left-galary .content-winingpics{ overflow:hidden;margin-top: 31px;
+  
+    padding-left: 20px;}
+.content-winingpics h2 a{ font-size:16px; color:#2d669e; float:left; font-family: 'Aller-Bold';    padding-right: 123px;}
+.content-winingpics h2 { margin:21px 0px 20px 0px;}
+.content-winingpics h2 img{     padding-right: 21px;}
+
+.content-left  .awards{ overflow:hidden; background:#edebe3; margin-top:20px; margin-bottom:25px;}
+.awards img{ float:left;}
+.awards h2{ color:#000000;padding: 18px 0px 0px 57px; font-size:18px;font-family: 'Aller-Bold'; margin:0px; }
+.awards p{ font-size:15px; font-family: 'Aller';    padding: 17px 33px 0px 22px;   color:#282828;}
+.awards p span{font-size:15px;font-family: 'Aller-Bold';color:#296db0;  border-bottom:2px solid #296db0; }
+.content-middle{ width:510px; overflow:hidden;float: left; }
+.content-middle .mlrit-flog { width:490px;margin-left:20px; overflow:hidden; background:#ffe082; margin-bottom:17px;}
+.mlrit-flog img{ float:left; padding-right:12px;}
+.mlrit-flog h2{font-family: 'Aller-Bold'; color:#383017; font-size:18px; margin:0px; padding-top:19px;}
+.mlrit-flog p{  color:#000000; font-size:15px;font-family: 'Aller'; padding:0px 34px 0px 30px;}
+.mlrit-flog h4{color:#000000; font-size:15px;font-family: 'Aller-Bold';    padding: 28px 115px 45px 34px; margin:0px;}
+.content-middle .news-events{ width:490px;margin-left:20px; background:#cdecfe; margin-bottom:20px;}
+.news-events img{ float:left; padding-right:12px; }
+.news-events h2{font-family: 'Aller-Bold'; color:#383017; font-size:18px;    margin: 0px 0px 18px 0px; padding-top:19px;}
+.news-events .dates { }
+.dates .dates-left{ background:#ffffff; overflow:hidden; width:60px; float:left; border:1px solid #7c7c7c;margin-left: 29px;}
+.dates-left h5{ margin:0px; font-size:12px; color:#3d5a6b;font-family: 'Aller-Bold'; text-align:center; padding-bottom:4px;}
+.dates-left p{ margin:0px; font-size:12px; color:#7c7c7c;font-family: 'Aller-Bold'; text-align:center; padding-bottom:4px;}
+.dates h3{ font-size:15px; color:#000000;font-family: 'Aller';     padding-left:109px;
+    padding-right: 26px;    margin: 0px;
+    padding-bottom: 19px;}
+	
+.dates .dates-l{ background:#ffffff; overflow:hidden; width:60px; float:left; border:1px solid #7c7c7c;margin-left: 29px;}
+.dates-l h5{margin:0px; font-size:12px; color:#3d5a6b;font-family: 'Aller-Bold'; text-align:center; padding-bottom:4px;}
+.dates-l p{ margin:0px; font-size:12px; color:#7c7c7c;font-family: 'Aller-Bold'; text-align:center; padding-bottom:4px;}
+.dates h4{ font-size:15px; color:#000000;font-family: 'Aller';     padding-left:109px;
+    padding-right: 26px;margin: 0px 0px 19px 0px; padding-bottom: 16px;}
+.content-middle .stories{width:490px;margin-left:20px; overflow:hidden; background:#f6d9d9; margin-bottom:17px;}
+.stories img{ float:left;padding-right:12px;}
+.stories h2{font-family: 'Aller-Bold'; color:#383017; font-size:18px;    margin: 0px 0px 18px 0px; padding-top:19px;}
+.stories .img{ padding-left:12px;}
+.img img{ margin-bottom:10px;}	
+.img p{ font-size:15px; font-family: 'Aller';padding: 0px 33px 0px 5px;color:#282828;}
+.img p span{font-size:15px;font-family: 'Aller-Bold';color:#000000;  border-bottom:2px solid #000000; }
+.content .content-right{ width:340px; overflow:hidden; float:right;}
+.login{ margin-left:20px;width:340px; overflow:hidden;}
+.login .student-login{ background:#3f7fbe; float:left; margin-bottom:6px;    border-radius: 42px;
+}
+
+.student-login img{ float: left;padding-left: 31px;padding-top: 9px;padding-right: 8px;}
+.student-login .log h2 {color: white;font-size: 16px;font-family: 'Aller-Bold';line-height: 42px;margin: 0px;float: left;padding: 0px 14px 0px 9px; }
+.log { float: right;}
+.log img{ float:right;padding-left: 59px;padding-top: 15px;}
+
+.login .student-log{ background:#319a6c; float:left;margin-bottom:6px;     border-radius: 42px;
+}
+.student-log img{ float: left;padding-left: 32px;padding-top: 9px;padding-right: 4px;}
+.student-log .log h2 {color: white;font-size: 16px;font-family: 'Aller-Bold';line-height: 42px;margin: 0px;float: left;padding: 0px 19px 0px 9px; }
+.log { float: right;}
+.log img{ float:right;padding-left: 59px;padding-top: 15px;}
+
+.login .student-lin{ background:#9f6db6; float:left;margin-bottom:15px;     border-radius: 42px;
+}
+.student-lin img{ float: left;padding-left: 32px;padding-top: 9px;padding-right: 4px;}
+.student-lin .log h2 {color: white;font-size: 16px;font-family: 'Aller-Bold';line-height: 42px;margin: 0px;float: left;padding: 0px 19px 0px 9px; }
+.log { float: right;}
+.log img{ float: right;padding-left: 106px;padding-top: 15px;padding-right: 28px;}
+.courses{ background:#e3ede5;width:340px; overflow:hidden;  margin-left:20px; margin-bottom:20px;}
+.courses .cours-ofrd{ overflow:hidden; }
+.cours-ofrd img{ float:left; padding-right:12px;}
+.cours-ofrd h2{font-family: 'Aller-Bold'; color:#000000; font-size:18px; padding-top: 10px; margin:0px;}
+.courses .ug-pg-curs{ overflow:hidden;}
+.ug-pg-curs .ug-courses { overflow:hidden; float:left; padding-bottom:12px;}
+.ug-courses h2{ font-size:14px; color:#86919d;font-family: 'Aller-Bold';margin:0px;  padding-top: 15px;padding-left: 28px; }
+.ug-courses p{ font-size:14px; color:#000000;font-family: 'Aller';margin:0px;     padding: 10px 33px 7px 29px;   }
+.ug-courses p span{font-size:14px; color:#000000;font-family: 'Aller-Bold';}
+.pg-courses h2{ font-size:14px; color:#86919d;font-family: 'Aller-Bold';margin:0px;  padding-top: 15px;padding-left: 28px; }
+.pg-courses p{ font-size:14px; color:#000000;font-family: 'Aller';margin:0px;     padding: 10px 0px 7px 29px; }
+.pg-courses p span{font-size:14px; color:#000000;font-family: 'Aller-Bold';}
+.content-right .youtube { margin-left:20px;margin-bottom:20px; }
+.content-right .antiragging {margin-left:20px; background:#e4ecf5; }
+.antiragging img{ overflow:hidden; float:left; padding-bottom:12px;    padding-right: 12px;}
+.antiragging  h2{ font-size:18px; color:#000000;font-family: 'Aller-Bold';margin:0px;  padding-top: 15px;padding-left: 28px; padding-bottom:18px;}
+.antiragging p{ font-size:15px;font-family: 'Aller';color:#000000;margin:0px;    padding-left: 27px;padding-right: 20px;padding-bottom: 22px; }
+.antiragging .anti-n{ overflow:hidden; border-bottom:1px solid #d2d9e2; border-top:1px solid #d2d9e2;}
+.anti-n img { padding-top: 14px;float:right;padding-right:30px;}
+.anti-n h4{ float:left;  padding-left:25px;  font-size:15px; font-family: 'Aller'; color:#296db0; line-height:39px;margin: 0px;}
+.antiragging .anti-m{ overflow:hidden; }
+.anti-m img {   padding-top:14px; float:right;padding-right:30px;}
+.anti-m h4{ float:left;   padding-left:25px; font-size:15px; font-family: 'Aller'; color:#296db0; line-height:39px;margin: 0px;}
+.footer-t{ background:#e3e9ef; overflow:hidden;}
+.footer-t h2{ font-size:18px; color:black;font-family: 'Aller-Bold'; text-align:center; margin:0px; padding-top:26px; padding-bottom:17px; }
+.footer-t img{ float:left; padding-right:10px; padding-bottom:20px;}
+.footer { background:#3b4651; overflow:hidden;}
+.footer .footer-l{ overflow:hidden; float:left;padding-top:20px; }
+.footer .footer-m { overflow:hidden; float:left;     padding-top: 13px;    padding-bottom: 13px; padding-left:21px;}
+.footer-m h6{ color:#bec9d4; font-size:14px; font-family: 'Aller'; margin:0px; }
+.footer-m p{ color:#aab7c5; font-size:13px; font-family: 'Aller'; margin:0px;}
+.footer-r img {padding:33px 0px 0px 35px;}
+</style> 
+
+</head>
+
+<body>
+<div class="top">
+<div class="container">
+<div class="header">
+<div class="header-left">
+<img src="../IMAGES/mlrit.png" alt="mlr" />
+</div>
+<div class="header-middle">
+<p>APPROVED BY AICTE-NEW DELHI</p>
+<h4>ACCREDIATED BY NAAC WITH 'A' GRADE</h4>
+<h5>AFFLIATED TO JNTU, HYDERABAD</h5>
+</div>
+<div class="header-right">
+<ul>
+<li><a href="#">EAMCET /</a> </li>
+<li><a href="#">ICET / </a></li>
+<li><a href="#">PGCET</a></li>
+</ul>
+<h2>MLRS</h2>
+</div>
+
+</div>
+<!--container end-->
+</div>
+<!--header end-->
+<div class="header-menus">
+<div class="container">
+<div class="menus">
+<ul>
+<li><a href="http://www.mlrinstitutions.ac.in/" class="padding">HOME</a> </li>
+<li><a href="http://www.mlrinstitutions.ac.in/about-us/vission-mission.html"> ABOUT US</a> </li>
+<li><a href="http://www.mlrinstitutions.ac.in/about-us/management.html">DEPATMENTS</a></li>
+<li><a href="#">PLACEMENTS</a></li>
+<li><a href="#">FACILITIES</a></li>
+<li><a href="#">ADMISSIONS</a></li>
+<li><a href="#">ACTIVITIES</a></li>
+<li><a href="#">  GALLERY</a></li>
+<li><a href="#">RESEARCH</a></li>
+<li><a href="#">ARTICLES</a></li>
+<li><a href="#" class="margin">CONTACT US</a></li>
+</ul>
+
+</div>
+<!--menus end-->
+</div>
+</div>
+<!--header-footer end-->
+</div>
+<!--top end-->
+
+<div class="container">
+<div class="slider">
+<div class="slider-left">
+<ul>
+<li><a href="#">  <img src="../IMAGES/one.png" /> PLACEMENTS
+<span><img src="../IMAGES/rightarrow.png" /></span></a></li>
+<li><a href="#"><img src="../IMAGES/two.png" />B.TECH PROGRAMMES
+<span><img src="../IMAGES/rightarrow.png" /></span></a></li>
+<li><a href="#"><img src="../IMAGES/three.png" />ACADEMIC COUNCIL
+<span> <img src="../IMAGES/rightarrow.png" /></span></a></li>
+<li><a href="#"><img src="../IMAGES/four.png" />GOVERNING BODY
+<span> <img src="../IMAGES/rightarrow.png" /></span></a></li>
+<li><a href="#"><img src="../IMAGES/five.png" />ACADEMIC CALENDER
+<span><img src="../IMAGES/rightarrow.png" /> </span></a></li>
+<li><a href="#"><img src="../IMAGES/six.png" />DOWNLOADS<span><img src="../IMAGES/rightarrow.png" /></span> </a></li>
+<li><a href="#"><img src="../IMAGES/saven.png" />REGULATIONS AND SYLLABI
+<img src="../IMAGES/rightarrow.png"  class="right"/></a></li>
+<li><a href="#"><img src="../IMAGES/eight.png" />PROFESSIONAL SOCIETIES
+<span><img src="../IMAGES/rightarrow.png" /></span></a></li>
+
+</ul>
+</div>
+<div class="slider-right">
+<img src="../IMAGES/sliderimg.png" alt="yty" />
+</div>
+</div>
+<!--slider end-->
+<div class="slider-bottom">
+
+<h2><img src="../IMAGES/Untitled-1.png" alt="ig" />Latest News</h2>
+<h3>Campus Drive by GlobalLogic on 02.04.2016 at MLRIT <span>   | </span>   Campus Drive by Intelenet Global Services (formerly Serco) 03.04.2016 at MLR</h3>
+</div>
+<!--slider-bottom end-->
+<div class="content">
+<div class="container">
+<div class="content-left">
+
+<div class="content-navbar">
+<div class="content-left-hdg">
+
+<img src="../IMAGES/man.png" alt="uil" />
+<h2>Campus Placement</h2>
+</div>
+<!--content-left-hdg end-->
+<div class="content-left-smenus">
+<img src="../IMAGES/image.png" alt="ruyf" />
+<p>Campus Drive by Intelenet Global 
+(Serco) || B.Tech. & MBA || 
+Analyst || 1.87-2.40 LPA</p>
+</div>
+<!--content-left-smenus end-->
+<div class="content-left-smenus">
+<img src="../IMAGES/image.png" alt="ruyf" />
+<p>Online Test by SAP for B.Tech. 2016 
+@ MLRIT</p>
+</div>
+<!--content-left-smenus end-->
+<div class="content-left-smenus">
+<img src="../IMAGES/image.png" alt="ruyf" />
+<p>Campus Drive by Genpact for B.Tech
+MBA, Pharmacy 2016 @ MLRITM</p>
+</div>
+<!--content-left-smenus end-->
+<div class="content-left-smenus">
+<img src="../IMAGES/image.png" alt="ruyf" />
+<p>Important Notice for B. Tech. 2016 
+passing out Students</p>
+</div>
+<!--content-left-smenus end-->
+<div class="content-left-smenu">
+<img src="../IMAGES/image.png" alt="ruyf" />
+<p>Campus Drive by GlobalLogic || 
+B.Tech. & MBA || Analyst </p>
+</div>
+<!--content-left-smenus end-->
+</div>
+<!--content-navbar end-->
+
+<div class="content-left-galary">
+<div class="content-glry">
+<img src="../IMAGES/galary.png" alt="yfuykf" />
+<h2>Photo Gallery</h2>
+</div>
+<div class="content-winingpics">
+<img src="../IMAGES/oward.png" alt="itriy" />
+<h2><a href="#">View all Photos</a> <img src="../IMAGES/left.png" alt="yrtyj" /><img src="../IMAGES/right.png" alt="yghg" /> </h2>
+<div>
+</div>
+</div>
+</div>
+ 
+<!--content-left-galary end-->
+<div class="awards">
+<img src="../IMAGES/cup.png" alt="uryf" />
+<h2>AWARDS / RECOGNITIONS</h2>
+<p>MLR Institute of Technology, one of the top ranking engineering colleges in India, has achieved global identity through its involvement in research in recent technology and successful completion of projects and products. MLRIT is the best destination for engineering aspirants.  <span > read more</span></p>
+</div>
+<!--awards end-->
+</div>
+<!--content-left end-->
+<div class="content-middle">
+<div class="mlrit-flog">
+<img src="../IMAGES/flog.png" alt="ytetyd" />
+<h2>WELCOME TO MLRITM</h2>
+<p>"India is the world's first knowledge based society. In modern times, as knowledge is back at the core of all human endeavour, it is imperative that India is at the forefront of this knowledge centric global quest for prosperity and happiness."</p>
+
+<h4>Inspired by this vision, the Marri Laxman Reddy</h4>
+</div>
+<!--mlrit-flog end-->
+<div class="news-events">
+<img src="../IMAGES/news.png" alt="jytry" />
+<h2>NEWS & EVENTS</h2>
+
+<div class="dates">
+<div class="dates-left">
+<h5>12 APR</h5>
+<p>2016</p>
+</div>
+<h3>VEM Technologies Drive Circular and Eligible list on 
+12/4/2016 at MLRIT</h3>
+</div>
+<!--DATES END-->
+<div class="dates">
+<div class="dates-left">
+<h5>06 APR</h5>
+<p>2016</p>
+</div>
+<h3>Swecha Software  Industry Oriented Training Camp
+for 15days.
+</h3>
+</div>
+<!--DATES END-->
+<div class="dates">
+<div class="dates-l">
+<h5>29 MAR</h5>
+<p>2016</p>
+</div>
+<h4>Faculty Recruitment for the Academic Year 2015-16
+</h4>
+</div>
+<!--DATES END-->
+<div class="dates">
+<div class="dates-left">
+<h5>20 MAR</h5>
+<p>2016</p>
+</div>
+<h3>Center for AIEEE-2012 Online Exam on 7th, 19th and 
+26th May 2012..
+</h3>
+</div>
+<!--DATES END-->
+<div class="dates">
+<div class="dates-left">
+<h5>16 MAR</h5>
+<p>2016</p>
+</div>
+<h3>Telephonic interviews 2coms consulting IBM India
+and Eligible list at MLRIT</h3>
+</div>
+<!--DATES END-->
+
+
+
+</div>
+<!--news-events end-->
+<div class="stories">
+<img src="../IMAGES/man.png" alt="ktuy" />
+<h2>SUCCESS STORIES</h2>
+<div class="img">
+<img src="../IMAGES/she.png" alt="yruy" />
+<p>MLR Institute of Technology, one of the top ranking engineering colleges in India, has achieved global identity through its involv ement in research in recent technology and...  <span>read more</span></p>
+</div>
+
+</div>
+<!--stories end-->
+</div>
+<!--content-middle end-->
+<div class="content-right">
+<div class="login">
+<div class="student-login">
+<img src="../IMAGES/student.png" alt="rtuf" />
+<div class="log">
+<h2>Student Login</h2>
+<img src="../IMAGES/ri.png" alt="ouii" />
+</div>
+</div>
+
+<div class="student-log">
+<img src="../IMAGES/ma.png" alt="ruf" />
+<div class="log">
+<h2>Faculty Login</h2>
+<img src="../IMAGES/ri.png" alt="ouii" />
+</div>
+</div>
+
+<div class="student-lin">
+<img src="../IMAGES/m.png" alt="tuf" />
+<div class="log">
+<h2>Parent Login</h2>
+<img src="../IMAGES/ri.png" alt="ouii" />
+</div>
+</div>
+
+</div>
+<!--login end-->
+<div class="courses">
+<div class="cours-ofrd">
+<img src="../IMAGES/book.png" alt="yr4ui" />
+<h2>COURSES OFFERED</h2>
+</div>
+
+<div class="ug-pg-curs">
+<div class="ug-courses">
+<h2>UG COURSE </h2>
+<p>CIVIL ______<span>60</span></p>
+<p>CSE ______<span>180</span></p>
+<p>ECE ______<span>180</span></p>
+<p>MECH ____<span>120</span></p>
+</div>
+
+<div class="pg-courses">
+<h2>PG COURSE </h2>
+<p>STRUCTURES ___<span>24</span></p>
+<p>CSE  __________<span>24</span></p>
+<p>Es  ___________<span>24</span></p>
+<p>CAD/CAM______<span>24</span></p>
+</div>
+
+</div>
+</div>
+<!--courses end-->
+<div class="youtube">
+<iframe width="320" height="236" src="https://www.youtube.com/embed/crjtXqEWr_o" frameborder="0" allowfullscreen></iframe>
+</iframe>
+</div>
+<!--youtube end-->
+<div class="antiragging">
+<img src="../IMAGES/intomark.png" alt="yuy" />
+<h2>ANTI RAGGING</h2>
+<p>College has taken various precautions as per AICTE Norms to prevent ragging and ensure 100% no-ragging.</p>
+<div class="anti-n">
+<h4>Anti-Ragging Notification</h4>
+<img src="../IMAGES/righ.png" alt="jyjf" />
+</div>
+<div class="anti-m">
+<h4>Anti-Ragging Affidavit</h4>
+<img src="../IMAGES/righ.png" alt="jyjf" />
+</div>
+<div class="anti-n">
+<h4>Anti Ragging Committee</h4>
+<img src="../IMAGES/righ.png" alt="jyjf" />
+</div>
+
+</div>
+<!--antiragging end-->
+</div>
+<!--content-right end-->
+
+</div>
+</div>
+<!--content end-->
+
+
+</div>
+<div class="footer-t">
+<h2>MOU’S WITH VERIOUS MNC’s & ISB</h2>
+<marquee>
+<img src="../IMAGES/wipro1.png" alt="uyr" />
+<img src="../IMAGES/infosys2.png" alt="yetr" />
+<img src="../IMAGES/ibm3.png" alt="yru" />
+<img src="../IMAGES/ca4.png" alt="trtr" />
+<img src="../IMAGES/sun5.png" alt="kjfh" />
+<img src="../IMAGES/infotich6.png" alt="jyru" />
+<img src="../IMAGES/wipro1.png" alt="uyr" />
+<img src="../IMAGES/infosys2.png" alt="yetr" />
+<img src="../IMAGES/ibm3.png" alt="yru" />
+<img src="../IMAGES/ca4.png" alt="trtr" />
+
+</marquee>
+
+</div>
+<div class="footer">
+<div class="container">
+<div class="footer-l">
+<img src="../IMAGES/googlepaly.png" alt="google" />
+</div>
+<div class="footer-m">
+<h6>About Us / Departments / Placements / Facilities / Admissions / Activities / Gallery / Research / Articles / Contact</h6>
+<p>Copyrights © 2016 Mlrinstitutions.ac.in, All rights reserved.</p>
+
+</div>
+<div class="footer-r">
+<img src="../IMAGES/face.png" alt="7ukjr7" />
+</div>
+</div>
+</div>
+</body>
+</html>
