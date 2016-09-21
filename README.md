@@ -1,0 +1,2 @@
+# newsrepoter
+the magzine
